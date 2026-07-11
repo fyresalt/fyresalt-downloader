@@ -4,7 +4,7 @@ A cross-platform terminal downloader for videos and other sites, A frontend for 
 
 ## Quick Start
 
-**Windows** - open PowerShell and run:
+**Windows** - open PowerShell or Windows Terminal and run:
 ```powershell
 irm get.fyresalt.com | iex
 ```
@@ -29,10 +29,8 @@ The script runs entirely from memory and downloads files to your Videos folder (
 | 5 | Download audio only (best available format) |
 | 6 | Download playlist - organizes each playlist into its own folder |
 | 7 | Custom yt-dlp arguments |
-| 8 | Install / Update yt-dlp |
-| 9 | Check / Install FFmpeg |
-| 10 | Check / Install Deno JS Runtime (required first) |
-| 11 | Install / Update yt-dlp-ejs (YouTube fix) |
+| 8 | Install/Update all requirements at once |
+| 9 | Install/Update required tools individually |
 | 0 | Exit |
 
 ---
@@ -40,22 +38,23 @@ The script runs entirely from memory and downloads files to your Videos folder (
 ## Requirements
 
 ### Windows
-- PowerShell 5.1+ (built into Windows 10/11)
+- Windows Terminal https://aka.ms/terminal (Optional)
+- PowerShell 5.1+ (Built into Windows 10/11)
 - yt-dlp - install via option 8
-- FFmpeg - install via option 9
-- Deno - install via option 11 (needed for YouTube EJS support)
+- FFmpeg - install via option 8
+- Deno - install via option 8 (Needed for YouTube EJS support)
 
 ### macOS
 - Python 3 (pre-installed on macOS)
 - yt-dlp - install via option 8
-- FFmpeg - install via option 9 (brew install ffmpeg)
-- Deno - install via option 11 (brew install deno)
+- FFmpeg - install via option 8 (brew install ffmpeg)
+- Deno - install via option 8 (brew install deno)
 
 ### Linux
-- Python 3 (pre-installed on most distros)
+- Python 3 (Pre-installed on most distros)
 - yt-dlp - install via option 8
-- FFmpeg - install via your package manager (prompted in option 9)
-- Deno - install via option 11
+- FFmpeg - install via your package manager (Prompted in option 8)
+- Deno - install via option 8
 
 ---
 
@@ -65,4 +64,4 @@ Newer versions of yt-dlp require a JavaScript runtime to extract some YouTube fo
 
     No supported JavaScript runtime could be found.
 
-Run option 10 first (Deno), then option 11 (yt-dlp-ejs). Deno must be installed before yt-dlp-ejs or the install will fail.
+Run option 9 first (Install/Update all requirements at once)
