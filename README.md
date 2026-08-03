@@ -22,12 +22,12 @@ The script runs entirely from memory and downloads files to your Videos folder (
 
 | Option | Description |
 |--------|-------------|
-| 1 | Download video + audio as MP4 (best quality) |
-| 2 | Download video + audio as MKV (best quality) |
+| 1 | Download video as MP4 (best quality) |
+| 2 | Download video as MKV (best quality) |
 | 3 | Download audio only as MP3 (high quality) |
 | 4 | Download audio only as WAV (high quality) |
-| 5 | Download audio only (best available format) |
-| 6 | Download playlist - organizes each playlist into its own folder |
+| 5 | Impersonate - Download MP4/MKV/MP3/WAV with browser impersonation (bypass blocks) |
+| 6 | Download playlist - Organizes each playlist into its own folder |
 | 7 | Custom yt-dlp arguments |
 | 8 | Install/Update all requirements at once |
 | 9 | Install/Update required tools individually |
