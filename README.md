@@ -22,15 +22,13 @@ The script runs entirely from memory and downloads files to your Videos folder (
 
 | Option | Description |
 |--------|-------------|
-| 1 | Download video as MP4 (best quality) |
-| 2 | Download video as MKV (best quality) |
-| 3 | Download audio only as MP3 (high quality) |
-| 4 | Download audio only as WAV (high quality) |
-| 5 | Impersonate - Download MP4/MKV/MP3/WAV with browser impersonation (bypass blocks) |
-| 6 | Download playlist - Organizes each playlist into its own folder |
-| 7 | Custom yt-dlp arguments |
-| 8 | Install/Update all requirements at once |
-| 9 | Install/Update required tools individually |
+| 1 | Video page - MP4 (most compatible), MKV (best quality), MP4 HD (max resolution, may use VP9/AV1 so less compatible) |
+| 2 | Audio page - MP3 (high quality), WAV (high quality), Original (best available audio, no conversion) |
+| 3 | Download playlist - organizes each playlist into its own folder |
+| 4 | Custom yt-dlp arguments |
+| 5 | Impersonate - same formats with browser impersonation (bypass blocks) |
+| 6 | Install/Update all requirements at once |
+| 7 | Install/Update required tools individually |
 | 0 | Exit |
 
 ---
@@ -40,21 +38,21 @@ The script runs entirely from memory and downloads files to your Videos folder (
 ### Windows
 - Windows Terminal https://aka.ms/terminal (Optional)
 - PowerShell 5.1+ (Built into Windows 10/11)
-- yt-dlp - install via option 8
-- FFmpeg - install via option 8
-- Deno - install via option 8 (Needed for YouTube EJS support)
+- yt-dlp - install via option 6
+- FFmpeg - install via option 6
+- Deno - install via option 6 (Needed for YouTube EJS support)
 
 ### macOS
 - Python 3 (pre-installed on macOS)
-- yt-dlp - install via option 8
-- FFmpeg - install via option 8 (brew install ffmpeg)
-- Deno - install via option 8 (brew install deno)
+- yt-dlp - install via option 6
+- FFmpeg - install via option 6 (brew install ffmpeg)
+- Deno - install via option 6 (brew install deno)
 
 ### Linux
 - Python 3 (Pre-installed on most distros)
-- yt-dlp - install via option 8
-- FFmpeg - install via your package manager (Prompted in option 8)
-- Deno - install via option 8
+- yt-dlp - install via option 6
+- FFmpeg - install via your package manager (Prompted in option 6)
+- Deno - install via option 6
 
 ---
 
@@ -64,4 +62,4 @@ Newer versions of yt-dlp require a JavaScript runtime to extract some YouTube fo
 
     No supported JavaScript runtime could be found.
 
-Run option 9 first (Install/Update all requirements at once)
+Run option 6 first (Install/Update all requirements at once)

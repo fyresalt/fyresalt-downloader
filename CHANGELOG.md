@@ -1,9 +1,15 @@
 # Changelog
 
 ## v4.1
-- Fixed: yt-dlp-ejs install (options 8/9) no longer fails with a PEP 668 "externally managed environment" error on macOS/Linux - dependencies now install into a dedicated virtual environment at `~/.fyresalt/venv` instead of the system Python
-- Changed: Option 5 (previously the redundant "Audio only - Best format") is now an **Impersonate** submenu where you pick MP4/MKV/MP3/WAV with `--impersonate chrome` applied, for when a site is blocking or rate-limiting requests
+- Fixed: yt-dlp-ejs install (Full Setup / Tools) no longer fails with a PEP 668 "externally managed environment" error on macOS/Linux - dependencies now install into a dedicated virtual environment at `~/.fyresalt/venv` instead of the system Python
+- Changed: Option 5 (previously the redundant "Audio only - Best format") is now an **Impersonate** submenu where you pick a video or audio format with `--impersonate chrome` applied, for when a site is blocking or rate-limiting requests
 - Fixed: the JS runtime step no longer treats node/bun as sufficient. Deno is required for yt-dlp-ejs, so it is now installed when missing (previously Full Setup skipped it, then yt-dlp-ejs failed with "Deno is not installed"). Error messages now point to the Tools menu instead of the removed option 11
+- Added: **MP4 HD** option (also in the Impersonate menu and the GUI) - picks the highest resolution first, then prefers MP4/M4A. Option 1 can cap at 1080p when higher resolutions are only offered as VP9/WebM
+- Changed: the main menu is smaller. Formats moved into a **Video** page (MP4, MKV, MP4 HD) and an **Audio** page (MP3, WAV). Menu numbers changed: Playlist is 3, Custom 4, Impersonate 5, Full Setup 6, Tools 7
+- Added: **Original** audio option (best available audio, no conversion) on the Audio and Impersonate pages
+- Fixed: on macOS the yt-dlp-ejs plugin was copied to a folder yt-dlp does not read, so it never loaded. It now goes to `~/.config/yt-dlp/plugins` (or `$XDG_CONFIG_HOME`), same as Linux
+- Fixed: on Linux the standalone yt-dlp binary is now downloaded (x86_64 and aarch64) instead of the Python zip build, so the Impersonate options work
+- GUI: window is taller so the output log is not squeezed by the new options
 
 ## v4.0
 - Renamed to **FYRESALT Downloader**
