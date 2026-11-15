@@ -3,6 +3,7 @@
 ## v4.1
 - Fixed: yt-dlp-ejs install (options 8/9) no longer fails with a PEP 668 "externally managed environment" error on macOS/Linux - dependencies now install into a dedicated virtual environment at `~/.fyresalt/venv` instead of the system Python
 - Changed: Option 5 (previously the redundant "Audio only - Best format") is now an **Impersonate** submenu where you pick MP4/MKV/MP3/WAV with `--impersonate chrome` applied, for when a site is blocking or rate-limiting requests
+- Fixed: the JS runtime step no longer treats node/bun as sufficient. Deno is required for yt-dlp-ejs, so it is now installed when missing (previously Full Setup skipped it, then yt-dlp-ejs failed with "Deno is not installed"). Error messages now point to the Tools menu instead of the removed option 11
 
 ## v4.0
 - Renamed to **FYRESALT Downloader**
