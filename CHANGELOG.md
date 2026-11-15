@@ -10,6 +10,9 @@
 - Fixed: on macOS the yt-dlp-ejs plugin was copied to a folder yt-dlp does not read, so it never loaded. It now goes to `~/.config/yt-dlp/plugins` (or `$XDG_CONFIG_HOME`), same as Linux
 - Fixed: on Linux the standalone yt-dlp binary is now downloaded (x86_64 and aarch64) instead of the Python zip build, so the Impersonate options work
 - GUI: window is taller so the output log is not squeezed by the new options
+- Fixed: on macOS/Linux the launcher quit right after showing its first menu when run as `curl ... | bash` or `| sh`; it now waits for your answer
+- Fixed: Macs with no Python and no Homebrew can now get set up. The launcher offers Apple's Command Line Tools (includes Python 3), and Full Setup installs Deno with the official installer and offers to install Homebrew for FFmpeg
+- Changed: yt-dlp-ejs is skipped with a clear message on Python older than 3.10 (Apple's Command Line Tools Python is 3.9) instead of failing with "pip install failed"
 
 ## v4.0
 - Renamed to **FYRESALT Downloader**

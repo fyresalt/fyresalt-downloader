@@ -43,10 +43,10 @@ The script runs entirely from memory and downloads files to your Videos folder (
 - Deno - install via option 6 (Needed for YouTube EJS support)
 
 ### macOS
-- Python 3 (pre-installed on macOS)
+- Python 3 (the launcher offers to install Apple's Command Line Tools, which include Python 3.9, or Homebrew's newer Python). yt-dlp-ejs needs Python 3.10+, so use Homebrew's Python for the YouTube EJS fix
 - yt-dlp - install via option 6
-- FFmpeg - install via option 6 (brew install ffmpeg)
-- Deno - install via option 6 (brew install deno)
+- FFmpeg - install via option 6 (uses Homebrew; offers to install it if missing)
+- Deno - install via option 6 (uses Homebrew if present, otherwise the official installer)
 
 ### Linux
 - Python 3 (Pre-installed on most distros)
